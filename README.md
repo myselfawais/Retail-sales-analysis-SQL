@@ -1,16 +1,7 @@
 # Retail Sales Data Analysis Project
 
 ## 📊 Project Overview
-A comprehensive SQL data analysis project exploring a retail sales dataset. This project involves data cleaning, exploration, and solving over 30 business problems using advanced SQL queries to uncover insights into sales performance, customer behavior, and product trends.
-
-## 🗂️ Project Structure
-retail-sales-sql-analysis/
-│
-├── data/
-│ └── retail_sales_data.csv # Dataset used for the analysis
-├── scripts/
-│ └── retail_sales_analysis.sql # Main SQL script with all queries
-├── README.md # Project documentation (this file)
+A comprehensive SQL data analysis project exploring a retail sales dataset. This project involves data cleaning, exploration, and solving over 20 business problems using advanced SQL queries to uncover insights into sales performance, customer behavior, and product trends. The initial dataset and foundational queries were inspired by the YouTube channel Zero Analyst. I expanded on this by researching and solving additional advanced data exploration problems based on real-world business demands, all of which are detailed below.
 
 
 ## 🛠️ Technologies Used
@@ -40,7 +31,7 @@ The analysis is performed on a single table `retail_sales` with the following st
 ### Prerequisites
 Before running the SQL scripts, ensure you have:
 - A relational database management system (RDBMS) installed (e.g., [PostgreSQL](https://www.postgresql.org/download/), MySQL).
-- A database client tool (e.g., [pgAdmin](https://www.pgadmin.org/), DBeaver, MySQL Workbench).
+- A database client tool (e.g., [pgAdmin](https://www.pgadmin.org/), DBeaver, MySQL Workbench, I personally use pgAdmin $).
 
 ### Installation & Setup
 1.  **Clone the repository:**
@@ -52,6 +43,21 @@ Before running the SQL scripts, ensure you have:
 2.  **Set up the database:**
     - Create a new database in your RDBMS (e.g., named `retail_sales`).
     - Run the `CREATE TABLE` statement found in the `scripts/retail_sales_analysis.sql` file to create the table structure.
+      ```sql
+      create table retail_sales
+(
+transactions_id	INT PRIMARY KEY,
+sale_date DATE,
+sale_time TIME,
+customer_id	INT,
+gender VARCHAR(15),
+age	INT,
+category VARCHAR(15),
+quantity INT,
+price_per_unit FLOAT,
+cogs FLOAT,
+total_sale FLOAT
+);```
 
 3.  **Import the data:**
     - Use the import function of your database client (e.g., pgAdmin's Import/Export wizard) to load the `data/retail_sales_data.csv` file into the `retail_sales` table.
@@ -77,20 +83,19 @@ The SQL script contains queries to solve business problems across three difficul
 ### Advanced
 - **Cohort Analysis** to measure customer retention.
 - **RFM Analysis** (Recency, Frequency, Monetary) for customer segmentation.
-- Year-over-Year (YoY) growth comparison.
+- Month-over-Monnth (MoM) growth comparison.
 - Market basket analysis (Frequently Bought Together).
 
 ## 📊 Key Insights
 - The top-selling product category was `Electronics`, contributing over 30% of total revenue.
-- Sales peak between 2 PM and 5 PM, suggesting optimal times for staffing and promotions.
-- A core group of just 5% of customers (`Champions` segment from RFM) generated over 40% of total revenue.
-- The `Home & Kitchen` category saw the highest YoY growth at 22%.
+- Sales peak between 6 PM and 9 PM, suggesting optimal times for staffing and promotions.
 
 ## 👨‍💻 Author
-**Your Name**
-- LinkedIn: [Your LinkedIn Profile URL]
-- GitHub: [Your GitHub Profile URL]
+Muhammad Awais
+- LinkedIn: linkedin.com/in/muhammad-awais-40785b346
+- Email: contact21rvt@gmail.com
 
 ## 🙌 Acknowledgments
-- Thanks to [Source of Dataset] for providing the data.
+- Thanks to ZERO ANALYST for providing the data.
 - Inspired by real-world business intelligence problems.
+

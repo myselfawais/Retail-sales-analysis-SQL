@@ -43,21 +43,6 @@ Before running the SQL scripts, ensure you have:
 2.  **Set up the database:**
     - Create a new database in your RDBMS (e.g., named `retail_sales`).
     - Run the `CREATE TABLE` statement found in the `scripts/retail_sales_analysis.sql` file to create the table structure.
-      ```sql
-      create table retail_sales
-(
-transactions_id	INT PRIMARY KEY,
-sale_date DATE,
-sale_time TIME,
-customer_id	INT,
-gender VARCHAR(15),
-age	INT,
-category VARCHAR(15),
-quantity INT,
-price_per_unit FLOAT,
-cogs FLOAT,
-total_sale FLOAT
-);```
 
 3.  **Import the data:**
     - Use the import function of your database client (e.g., pgAdmin's Import/Export wizard) to load the `data/retail_sales_data.csv` file into the `retail_sales` table.
@@ -98,4 +83,5 @@ Muhammad Awais
 ## 🙌 Acknowledgments
 - Thanks to ZERO ANALYST for providing the data.
 - Inspired by real-world business intelligence problems.
+
 

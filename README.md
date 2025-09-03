@@ -67,7 +67,6 @@ The SQL script contains queries to solve business problems across three difficul
 
 ### Advanced
 - **Cohort Analysis** to measure customer retention.
-- **RFM Analysis** (Recency, Frequency, Monetary) for customer segmentation.
 - Month-over-Monnth (MoM) growth comparison.
 - Market basket analysis (Frequently Bought Together).
 
@@ -83,5 +82,6 @@ Muhammad Awais
 ## 🙌 Acknowledgments
 - Thanks to ZERO ANALYST for providing the data.
 - Inspired by real-world business intelligence problems.
+
 
 
